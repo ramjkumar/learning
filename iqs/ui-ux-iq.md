@@ -111,6 +111,11 @@ Screen reader issues with dynamic content; I resolved them using ARIA live regio
 - **Feedback**: Users should get clear responses from the system.
 - **Accessibility**: Follow WCAG to ensure inclusivity.
 - **Responsiveness**: Ensure UI works across devices and breakpoints.
+
+### What is Inclusivity in Accessibility?
+Inclusivity in accessibility means creating digital (and physical) products, services, and environments that everyone can use, no matter their abilities, background, or situation.
+
+Inclusivity in accessibility = designing for human diversity by intentionally supporting different abilities, cultures, and contexts — not just complying with accessibility checklists.
 ___
 # Agile/Scrum Methodology
 ### How do you contribute to Agile ceremonies?
