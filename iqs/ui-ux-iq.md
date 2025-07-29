@@ -72,13 +72,23 @@ I break down the UI into reusable, self-contained components using frameworks li
 - Split into smaller components.
 ___
 # State Management
+### Explain global vs local state with example.
+Local state belongs to a specific component (e.g., modal open/close). Global state is shared (e.g., user authentication info). Global state is managed via Redux, Vuex, or Context API.
 ### When would you use global vs local state?
 - **Local State**: Form inputs, toggle UI states.
 - **Global State**: User auth, theme, API data.
 ### What state management tools have you used and why?
 write answer here...
+### How would you manage state in a medium to large app?
+write answer here...
 ___
 # API Integration
+### How do you consume a REST API in vanilla JavaScript?
+write answer here...
+### How do you handle API errors and loading states in the UI?
+write answer here...
+### How do you handle REST API integration in a scalable frontend app?
+I use fetch or axios for API calls, centralize logic in services, implement proper loading/error states, and cache frequent responses using state management libraries like Redux or Vuex.
 ### How do you handle API errors in frontend?
 - Show user-friendly error messages
 - Use try...catch
@@ -255,17 +265,39 @@ Legal and ethical alignment in accessibility ensures that digital products and s
     - Ensures equal opportunity in employment and information access.
 
 3. ✅**Web Content Accessibility Guidelines (WCAG)**
+
+### What is the difference between ARIA roles and native HTML elements?
+write answer here...
+### How do you make forms accessible?
+write answer here...
+### How do you test your site for accessibility compliance?
+write answer here...
 ___
 # Agile/Scrum Methodology
 ### How do you contribute to Agile ceremonies?
 In sprint planning, I help estimate UI tasks with story points; in daily standups, I report blockers; and during retros, I suggest improvements in collaboration.
 ### Describe your experience working in Agile teams.
-I've worked in 2-week sprint cycles. I participate in daily standups, sprint planning, demos, and retrospectives. I use tools like Jira or Azure Boards for managing user stories and tasks.
+I've worked in 2-week sprint cycles. I participate in daily standups, sprint planning, demos, and retrospectives. I ensure design tickets are refined ahead, prioritize UI bugs, and sync regularly with QA and backend devs for smooth integration. I use tools like Jira or Azure Boards for managing user stories and tasks.
+### What is your role in a daily standup?
+write answer here...
+### How do you handle mid-sprint changes?
+write answer here...
+### Explain your workflow in a typical sprint.
+write answer here...
 ___
 # Visual Scripting & No-Code/Low-Code
+### What is no-code automation?
+No-code automation enables building workflows using visual tools. I've used Zapier to trigger notifications on form submissions and Power Automate to connect SharePoint and Outlook for task automation.
 ### What is your experience with visual scripting tools?
 I’ve used Mendix and OutSystems to build UI workflows with drag-and-drop interfaces and custom logic blocks.
 ### How do low-code platforms impact UI/UX quality?
 They speed up development but need design governance to avoid inconsistency. I standardize layouts and enforce design tokens across templates.
 ### What experience do you have with no-code platforms?
 I’ve built internal tools using [e.g. Bubble] where I used visual workflows to automate tasks like form submission, notifications, and report generation. I integrated with REST APIs for dynamic data.
+### What low-code platforms have you worked with?
+write answer here...
+### How do you automate workflows without writing code?
+write answer here...
+### How do you use tools like Power Automate or Zapier?
+write answer here...
+
