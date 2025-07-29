@@ -11,7 +11,7 @@
 Use media queries, fluid grids (CSS Grid/Flexbox), relative units (%, rem, vw), and mobile-first design. Tools like Chrome DevTools help test responsiveness across breakpoints.
 
 ### How do you handle performance in large-scale CSS?
-I use methodologies like BEM for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
+I use methodologies like BEM(Block Element Modifier) for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
 
 ### Explain how Flexbox and Grid differ.
 write answer here...
