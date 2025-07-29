@@ -56,6 +56,21 @@ ___
 write answer here...
 ___
 # API Integration
+### How do you handle API errors in frontend?
+- Show user-friendly error messages
+- Use try...catch
+- Retry logic for transient errors
+```
+try {
+  const response = await fetch('/api/data');
+  if (!response.ok) throw new Error('API Error');
+  const data = await response.json();
+} catch (err) {
+  console.error(err);
+  showToast("Failed to load data.");
+}
+
+```
 ### How do you handle REST API integration errors in the UI?
 1. Categorize API Errors
 - **400** -	Bad Request	- Show specific form input errors
