@@ -9,6 +9,19 @@
 # Front-End Development (HTML, CSS, JS)
 ### How do you ensure responsiveness in your UI designs?
 Use media queries, fluid grids (CSS Grid/Flexbox), relative units (%, rem, vw), and mobile-first design. Tools like Chrome DevTools help test responsiveness across breakpoints.
+
+### How do you handle performance in large-scale CSS?
+I use methodologies like BEM for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
+
+### Explain how Flexbox and Grid differ.
+write answer here...
+
+### What is the purpose of ARIA roles in HTML?
+write answer here...
+
+### How do you optimize CSS for performance?
+write answer here...
+
 ### What are the differences between ``==`` and ``===`` in JavaScript?
 - ``==`` compares values after type coercion.
 - ``===`` compares both value and type.
@@ -16,6 +29,9 @@ Use media queries, fluid grids (CSS Grid/Flexbox), relative units (%, rem, vw), 
 '5' == 5  // true
 '5' === 5 // false
 ```
+### What is event delegation in JavaScript?
+write answer here...
+
 ### How do you optimize performance in JavaScript-heavy applications?
 Debouncing events, lazy loading, splitting code via Webpack, avoiding DOM reflows, and using vanilla JS when appropriate
 ___
@@ -243,6 +259,8 @@ ___
 # Agile/Scrum Methodology
 ### How do you contribute to Agile ceremonies?
 In sprint planning, I help estimate UI tasks with story points; in daily standups, I report blockers; and during retros, I suggest improvements in collaboration.
+### Describe your experience working in Agile teams.
+I've worked in 2-week sprint cycles. I participate in daily standups, sprint planning, demos, and retrospectives. I use tools like Jira or Azure Boards for managing user stories and tasks.
 ___
 # Visual Scripting & No-Code/Low-Code
 ### What is your experience with visual scripting tools?
