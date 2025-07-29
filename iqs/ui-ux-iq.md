@@ -48,18 +48,18 @@ ___
   - Use a design system (e.g., Material Design, Carbon Design, or custom) to define visual and functional guidelines.
   - Create a centralized component library (React, Vue, etc.) with reusable, accessible components.
     - **Best Practices**
-    - Consistent use of spacing, typography, colors, and iconography.
-    - Shared tokens/variables (via SCSS, CSS custom properties, or design tokens via tools like Style Dictionary).
-    - Components like Button, Modal, Input, Tooltip, etc., should follow the same patterns and accessibility rules
+      - Consistent use of spacing, typography, colors, and iconography.
+      - Shared tokens/variables (via SCSS, CSS custom properties, or design tokens via tools like Style Dictionary).
+      - Components like Button, Modal, Input, Tooltip, etc., should follow the same patterns and accessibility rules
 2. **Accessibility-First Development**
 - Follow WCAG 2.1/2.2 guidelines from the start.
 - Use semantic HTML elements whenever possible.
 - Ensure ARIA is used only when needed and correctly.
   - **Best Practices**
-  - Proper heading hierarchy (``<h1>`` to ``<h6>``).
-  - Use ``<button>``, ``<nav>``, ``<main>``, ``<section>`` rather than generic ``<div>``
-  - All interactive elements must be keyboard accessible.
-  - Focus management and skip links for navigation.
+    - Proper heading hierarchy (``<h1>`` to ``<h6>``).
+    - Use ``<button>``, ``<nav>``, ``<main>``, ``<section>`` rather than generic ``<div>``
+    - All interactive elements must be keyboard accessible.
+    - Focus management and skip links for navigation.
 ___
 # Component-Based Development
 ### What is component-based architecture in frontend development?
@@ -106,11 +106,11 @@ try {
 ```
 ### How do you handle REST API integration errors in the UI?
 1. Categorize API Errors
-- **400** -	Bad Request	- Show specific form input errors
-- **401 / 403**	-	Unauthorized / Forbidden	- Redirect to login or show access denied message
-- **404**	-	Not Found - 	Show friendly “Not Found” page
-- **500+**	-	Server Error	- Show “Something went wrong” message, offer retry
-- **Network Errors**	-	No Internet / Timeout	Show offline banner or retry mechanism
+  - **400** -	Bad Request	- Show specific form input errors
+  - **401 / 403**	-	Unauthorized / Forbidden	- Redirect to login or show access denied message
+  - **404**	-	Not Found - 	Show friendly “Not Found” page
+  - **500+**	-	Server Error	- Show “Something went wrong” message, offer retry
+  - **Network Errors**	-	No Internet / Timeout	Show offline banner or retry mechanism
 2. Display Friendly Error Messages
   
   Avoid showing raw server messages like: "Error 500: Internal Server Error"
