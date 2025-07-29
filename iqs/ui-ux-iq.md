@@ -56,6 +56,19 @@ ___
 3. Retry Logic for Transient Errors
 - Use retry mechanisms for timeouts or 5xx errors.
 - Implement exponential backoff for automated retries (e.g., using libraries like axios-retry).
+
+4. Global Error Handling with Interceptors
+- Centralize your error-handling logic for consistency.
+
+5. UX Practices
+- Loading indicators during API calls to indicate progress.
+- Disable submit buttons to prevent duplicate API calls.
+- Auto-recover UI if possible (e.g., auto-refresh token and retry).
+- Form field-specific errors when validation fails (from a 400 response).
+
+6. Logging and Monitoring
+- Log errors (to console or to a monitoring service like Sentry).
+- Provide detailed logs for devs, but user-friendly messages in UI.
 ___
 # Accessibility & Usability
 ### What is WCAG
