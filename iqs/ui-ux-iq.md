@@ -1,7 +1,11 @@
 [`Front-End Development (HTML, CSS, JS)`](#front-end-development-html-css-js)🔸
 [`UI/UX Design`](#uiux-design)🔸
 [`Component-Based Development`](#component-based-development)🔸
+[`State Management`](#state-management)🔸
+[`API Integration`](#api-integration)🔸
 [`Accessibility & Usability`](#accessibility--usability)🔸
+[`Agile/Scrum`](#agilescrum-methodology)🔸
+[`Visual Scripting`](#visual-scripting--no-codelow-code)🔸
 # Front-End Development (HTML, CSS, JS)
 ### How do you ensure responsiveness in your UI designs?
 I use media queries, fluid grids, and flexible layouts with CSS Flexbox/Grid. Tools like Chrome DevTools help test responsiveness across breakpoints.
