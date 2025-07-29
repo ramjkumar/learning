@@ -70,8 +70,8 @@ WCAG is built around four main principles:
 - **WCAG 3.0 (draft)** Coming soon	>More flexible, broader in scope
 ### WCAG Conformance Levels
 Each guideline has testable success criteria, divided into three levels:
-- **A**	Minimum accessibility	- Provide text alternatives for images
-- **AA**	Mid-range, legal requirement in many countries -Ensure good contrast, keyboard navigation
-- **AAA**	Highest level, not always achievable	- Provide sign language interpretation for videos.
+- **A**	- Minimum accessibility	- Provide text alternatives for images
+- **AA** - Mid-range, legal requirement in many countries -Ensure good contrast, keyboard navigation
+- **AAA**	- Highest level, not always achievable	- Provide sign language interpretation for videos.
 
 Most organizations aim for **WCAG 2.1 AA** compliance as the standard.
