@@ -50,6 +50,10 @@ ___
 Component-based architecture divides UI into independent, reusable pieces (components) that manage their own state. Frameworks like React, Vue, and Angular use this approach. It promotes maintainability, reusability, and testability.
 ### How do you approach component-based architecture?
 I break down the UI into reusable, self-contained components using frameworks like React or Angular. Each component handles its own styling, logic, and state.
+### How do you avoid unnecessary re-renders in a component?
+- Use React.memo, useMemo, useCallback.
+- Avoid changing object references unnecessarily.
+- Split into smaller components.
 ___
 # State Management
 ### When would you use global vs local state?
@@ -245,3 +249,5 @@ ___
 I’ve used Mendix and OutSystems to build UI workflows with drag-and-drop interfaces and custom logic blocks.
 ### How do low-code platforms impact UI/UX quality?
 They speed up development but need design governance to avoid inconsistency. I standardize layouts and enforce design tokens across templates.
+### What experience do you have with no-code platforms?
+I’ve built internal tools using [e.g. Bubble] where I used visual workflows to automate tasks like form submission, notifications, and report generation. I integrated with REST APIs for dynamic data.
