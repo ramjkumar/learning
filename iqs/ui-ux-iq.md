@@ -13,6 +13,13 @@ I use media queries, fluid grids, and flexible layouts with CSS Flexbox/Grid. To
 Debouncing events, lazy loading, splitting code via Webpack, avoiding DOM reflows, and using vanilla JS when appropriate
 ___
 # UI/UX Design
+### What are the key principles of good UI/UX design?
+- **Clarity**: Avoid ambiguity, maintain visual hierarchy.
+- **Consistency**: Reuse styles/components.
+- **Feedback**: Users should get clear responses from the system.
+- **Accessibility**: Follow WCAG to ensure inclusivity.
+- **Responsiveness**: Ensure UI works across devices and breakpoints.
+  
 ### How do you maintain visual consistency and accessibility across components?
 1. **Design system & component library**
   - Use a design system (e.g., Material Design, Carbon Design, or custom) to define visual and functional guidelines.
@@ -135,6 +142,48 @@ Inclusivity in accessibility means creating digital (and physical) products, ser
 - Increased market reach (older adults, people in low-bandwidth areas, etc.).
 - Legal and ethical alignment (ADA, Section 508, WCAG).
 - Encourages innovation through diverse perspectives.
+
+### Legal and ethical alignment in accessibility
+Legal and ethical alignment in accessibility ensures that digital products and services are usable by all people, including individuals with disabilities. This involves adhering to laws, regulations, and standards that promote equal access. In most countries, legal and ethical accessibility practices revolve around three core frameworks:
+1. ✅**Americans with Disabilities Act (ADA)**
+
+- 🔹**What is ADA?**
+    - The Americans with Disabilities Act (1990) is a U.S. civil rights law that protects people with disabilities from discrimination in jobs, schools, transportation, and public places.
+
+- 🔹**How ADA applies to Digital Accessibility**:
+    - Although the original ADA doesn’t explicitly mention websites or digital content, courts and the Department of Justice (DOJ) have increasingly interpreted it to apply to websites, mobile apps, and digital services.
+ 
+- 🔹**Key Legal Considerations**:
+    - Applies to Title II (state and local governments) and Title III (public accommodations like businesses).
+    - Websites that are not accessible (e.g., not usable with screen readers or keyboard-only navigation) can be seen as a barrier—which is discriminatory under ADA.
+    - Lawsuits have risen against businesses, schools, hospitals, etc., for ADA violations.
+
+- 🔹**Ethical Relevance**:
+    - ADA supports the equal dignity and rights of people with disabilities.
+    - Ethically, it's about inclusion and nondiscrimination.
+   
+2. ✅**Section 508 of the Rehabilitation Act**
+   
+- 🔹**What is Section 508?**
+    - Section 508 is a U.S. federal law that requires federal agencies to make their electronic and information technology (EIT) accessible to people with disabilities.
+
+- 🔹**Scope**
+    - Applies to federal websites, systems, documents, and software.
+    - Any vendors or contractors working with federal agencies must also comply.
+    - Introduced in 1998, and updated in 2018 (508 Refresh) to align with WCAG 2.0 Level AA.
+
+- 🔹**Compliance Requirement**
+    - All federal EIT must meet WCAG 2.0 Level AA success criteria (as of 2018).
+    - Applies to web content, software, PDFs, videos, and other digital assets.
+   
+- 🔹**Legal Implications**
+    - Noncompliance can result in contract penalties, procurement disqualification, or civil actions.
+   
+- 🔹**Ethical Relevance**
+    - Public services should be equitably accessible to all taxpayers.
+    - Ensures equal opportunity in employment and information access.
+
+3. ✅**Web Content Accessibility Guidelines (WCAG)**
 ___
 # Agile/Scrum Methodology
 ### How do you contribute to Agile ceremonies?
