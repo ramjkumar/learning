@@ -52,6 +52,9 @@ Component-based architecture divides UI into independent, reusable pieces (compo
 I break down the UI into reusable, self-contained components using frameworks like React or Angular. Each component handles its own styling, logic, and state.
 ___
 # State Management
+### When would you use global vs local state?
+- **Local State**: Form inputs, toggle UI states.
+- **Global State**: User auth, theme, API data.
 ### What state management tools have you used and why?
 write answer here...
 ___
