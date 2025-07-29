@@ -8,7 +8,14 @@
 [`Visual Scripting`](#visual-scripting--no-codelow-code)🔸
 # Front-End Development (HTML, CSS, JS)
 ### How do you ensure responsiveness in your UI designs?
-I use media queries, fluid grids, and flexible layouts with CSS Flexbox/Grid. Tools like Chrome DevTools help test responsiveness across breakpoints.
+Use media queries, fluid grids (CSS Grid/Flexbox), relative units (%, rem, vw), and mobile-first design. Tools like Chrome DevTools help test responsiveness across breakpoints.
+### What are the differences between ``==`` and ``===`` in JavaScript?
+- ``==`` compares values after type coercion.
+- ``===`` compares both value and type.
+```
+'5' == 5  // true
+'5' === 5 // false
+```
 ### How do you optimize performance in JavaScript-heavy applications?
 Debouncing events, lazy loading, splitting code via Webpack, avoiding DOM reflows, and using vanilla JS when appropriate
 ___
@@ -108,16 +115,42 @@ Each guideline has testable success criteria, divided into three levels:
 - **AAA**	- Highest level, not always achievable	- Provide sign language interpretation for videos.
 
 Most organizations aim for **WCAG 2.1 AA** compliance as the standard.
-### How do you ensure your applications meet WCAG standards?
-By using semantic HTML, ARIA roles, keyboard navigation, color contrast checks, and automated tools like axe-core or Lighthouse.
+
+### How do you ensure your web app is accessible?
+ 1. ✅ Follow WCAG Guidelines
+ 2. ✅ Use Semantic HTML
+ 3. ✅ ARIA Roles and Attributes (when needed)
+    - Use ARIA only when semantic HTML isn't sufficient.
+    - Use roles like ``role="dialog"`` or ``aria-live="polite"`` appropriately.
+    - Avoid unnecessary ARIA like ``role="button"`` on a real ``<button``.
+  4. ✅ Keyboard Navigation Support
+    - Ensure all functionality is accessible using a keyboard:
+    - Use tabindex, focus(), and skip links
+    - Custom components should handle keyboard events (Enter, Space, Esc, etc.)
+  5. ✅ Color Contrast & Visual Design
+  6. ✅ Forms and Labels
+  7. ✅ Alt Text for Images
+  8. ✅ Test with Assistive Technologies
+      - Test using: Screen readers: NVDA, JAWS, VoiceOver
+      - Screen magnifiers
+      - Keyboard-only navigation
+  9. ✅ Automated Accessibility Testing
+      - Use tools like: axe DevTools
+      - Lighthouse (Chrome DevTools)
+      - WAVE, But remember: Automated tools catch ~30–40% of issues.
+  10. ✅ Manual and User Testing
+  11. ✅ Responsive and Adaptive Layouts
+  12. ✅ Accessibility in Components and Frameworks
+        
+### What are some common WCAG violations you’ve fixed?
+- Missing alt attributes on images
+- Improper use of heading tags
+- Insufficient color contrast
+- Lack of focus states
+- Modal dialogs not accessible with keyboard
+
 ### What challenges have you faced with accessibility, and how did you solve them?
 Screen reader issues with dynamic content; I resolved them using ARIA live regions and avoiding role conflicts.
-### What are the key principles of good UI/UX design?
-- **Clarity**: Avoid ambiguity, maintain visual hierarchy.
-- **Consistency**: Reuse styles/components.
-- **Feedback**: Users should get clear responses from the system.
-- **Accessibility**: Follow WCAG to ensure inclusivity.
-- **Responsiveness**: Ensure UI works across devices and breakpoints.
 
 ### What is Inclusivity in Accessibility?
 Inclusivity in accessibility means creating digital (and physical) products, services, and environments that everyone can use, no matter their abilities, background, or situation.
