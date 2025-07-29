@@ -32,6 +32,10 @@ Component-based architecture divides UI into independent, reusable pieces (compo
 ### How do you approach component-based architecture?
 I break down the UI into reusable, self-contained components using frameworks like React or Angular. Each component handles its own styling, logic, and state.
 ___
+# State Management
+### What state management tools have you used and why?
+write answer here...
+___
 # API Integration
 ### How do you handle REST API integration errors in the UI?
 1. Categorize API Errors
@@ -47,7 +51,6 @@ Instead, display messages like:
 - 🔄 - “Something went wrong. Please try again later.”
 - ❌ - “We couldn’t save your changes. Check your internet connection.”
 ___
-
 # Accessibility & Usability
 ### What is WCAG
 WCAG stands for Web Content Accessibility Guidelines. It is a set of international guidelines developed by the W3C (World Wide Web Consortium) to make web content more accessible to people with disabilities.
@@ -75,3 +78,17 @@ Each guideline has testable success criteria, divided into three levels:
 - **AAA**	- Highest level, not always achievable	- Provide sign language interpretation for videos.
 
 Most organizations aim for **WCAG 2.1 AA** compliance as the standard.
+### How do you ensure your applications meet WCAG standards?
+By using semantic HTML, ARIA roles, keyboard navigation, color contrast checks, and automated tools like axe-core or Lighthouse.
+### What challenges have you faced with accessibility, and how did you solve them?
+Screen reader issues with dynamic content; I resolved them using ARIA live regions and avoiding role conflicts.
+___
+# Agile/Scrum Methodology
+### How do you contribute to Agile ceremonies?
+In sprint planning, I help estimate UI tasks with story points; in daily standups, I report blockers; and during retros, I suggest improvements in collaboration.
+___
+# Visual Scripting & No-Code/Low-Code
+### What is your experience with visual scripting tools?
+I’ve used Mendix and OutSystems to build UI workflows with drag-and-drop interfaces and custom logic blocks.
+### How do low-code platforms impact UI/UX quality?
+They speed up development but need design governance to avoid inconsistency. I standardize layouts and enforce design tokens across templates.
