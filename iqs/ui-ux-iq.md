@@ -48,9 +48,14 @@ ___
 2. Display Friendly Error Messages
   
   Avoid showing raw server messages like: "Error 500: Internal Server Error"
-Instead, display messages like:
-- 🔄 - “Something went wrong. Please try again later.”
-- ❌ - “We couldn’t save your changes. Check your internet connection.”
+
+  Instead, display messages like:
+  - 🔄 - “Something went wrong. Please try again later.”
+  - ❌ - “We couldn’t save your changes. Check your internet connection.”
+ 
+3. Retry Logic for Transient Errors
+- Use retry mechanisms for timeouts or 5xx errors.
+- Implement exponential backoff for automated retries (e.g., using libraries like axios-retry).
 ___
 # Accessibility & Usability
 ### What is WCAG
