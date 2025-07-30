@@ -309,24 +309,39 @@ write answer here...
 ### ❓ How do you use tools like Power Automate or Zapier?
 write answer here...
 
-<style>
-table th:first-of-type {
-    width: 10%;
-}
-table th:nth-of-type(2) {
-    width: 10%;
-}
-table th:nth-of-type(3) {
-    width: 50%;
-}
-table th:nth-of-type(4) {
-    width: 30%;
-}
-</style>
-
-
-+---------+---------+---------+----------+
-| Header1 | header2 | header3 | header4  |
-+---------+---------+---------+----------+
-| Bar     | bar     | bar     | bar      |
-+---------+---------+---------+----------+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Wireframe</th>
+      <th>Prototype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Fidelity</strong></td>
+      <td>Low</td>
+      <td>Medium to High</td>
+    </tr>
+    <tr>
+      <td><strong>Design</strong></td>
+      <td>Simple layout, no color or styling</td>
+      <td>Detailed visuals, branding, UI elements</td>
+    </tr>
+    <tr>
+      <td><strong>Interactivity</strong></td>
+      <td>None or minimal (like navigation flow)</td>
+      <td>Clickable, simulates real interactions</td>
+    </tr>
+    <tr>
+      <td><strong>Purpose</strong></td>
+      <td>Define structure and layout</td>
+      <td>Test functionality and user experience</td>
+    </tr>
+    <tr>
+      <td><strong>Tools</strong></td>
+      <td>Balsamiq, Sketch, Figma (low-fi)</td>
+      <td>Figma, Adobe XD, InVision (interactive)</td>
+    </tr>
+  </tbody>
+</table>
