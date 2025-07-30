@@ -1,4 +1,3 @@
-[`Front-End Development (HTML, CSS, JS)`](#front-end-development-html-css-js)🔸
 [`HTML`](html.md)🔸
 [`CSS`](css.md)🔸
 [`JS`](js.md)🔸
@@ -9,26 +8,7 @@
 [`Accessibility & Usability`](#accessibility--usability)🔸
 [`Agile/Scrum`](#agilescrum-methodology)🔸
 [`Visual Scripting`](#visual-scripting--no-codelow-code)🔸
-# Front-End Development (HTML, CSS, JS)
-### How do you ensure responsiveness in your UI designs?
-Use media queries, fluid grids (CSS Grid/Flexbox), relative units (%, rem, vw), and mobile-first design. Tools like Chrome DevTools help test responsiveness across breakpoints.
 
-### What is the purpose of ARIA roles in HTML?
-write answer here...
-
-### What are the differences between ``==`` and ``===`` in JavaScript?
-- ``==`` compares values after type coercion.
-- ``===`` compares both value and type.
-```
-'5' == 5  // true
-'5' === 5 // false
-```
-### What is event delegation in JavaScript?
-write answer here...
-
-### How do you optimize performance in JavaScript-heavy applications?
-Debouncing events, lazy loading, splitting code via Webpack, avoiding DOM reflows, and using vanilla JS when appropriate
-___
 # UI/UX Design
 ### What are the key principles of good UI/UX design?
 - **Clarity**: Avoid ambiguity, maintain visual hierarchy.
