@@ -343,5 +343,10 @@ write answer here...
       <td>Balsamiq, Sketch, Figma (low-fi)</td>
       <td>Figma, Adobe XD, InVision (interactive)</td>
     </tr>
+      <tr>
+      <td><strong>Example</strong></td>
+      <td>Sketching how the homepage of a website will be structured: where the logo, menu, banner, and content sections will go.</td>
+      <td>Demonstrating how a user would sign up for an account or add an item to a cart in a mobile app.</td>
+    </tr>
   </tbody>
 </table>
