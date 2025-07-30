@@ -1,6 +1,6 @@
 ### HTML
 
-### How do you implement responsive design?
+### ❓ How do you implement responsive design?
 1. ✅ Use a Responsive Meta Tag
    - ``` <meta name="viewport" content="width=device-width, initial-scale=1.0"> ```
 2. ✅ Use Fluid Layouts with Relative Units
@@ -22,7 +22,7 @@
    - Real devices for hands-on testing
    - Tools like BrowserStack or Responsively App
 
-### What is the purpose of ARIA roles in HTML?
+### ❓ What is the purpose of ARIA roles in HTML?
 The purpose of **ARIA (Accessible Rich Internet Applications)** roles in HTML is to improve accessibility for users who rely on assistive technologies like screen readers.
 
 **Key Purposes of ARIA Roles**:
@@ -45,7 +45,7 @@ The purpose of **ARIA (Accessible Rich Internet Applications)** roles in HTML is
 - **tab** -	Identifies a tab in a tablist
 - **tooltip** - Describes a tooltip element
 
-### What is the difference between inline and block elements?
+### ❓ What is the difference between inline and block elements?
 - **Block Elements**
    - Always start on a new line.
    - Take up the full width available (by default).
