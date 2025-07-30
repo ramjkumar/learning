@@ -1,5 +1,7 @@
 [`Front-End Development (HTML, CSS, JS)`](#front-end-development-html-css-js)🔸
+[`HTML`](html.md)🔸
 [`CSS`](css.md)🔸
+[`JS`](js.md)🔸
 [`UI/UX Design`](#uiux-design)🔸
 [`Component-Based Development`](#component-based-development)🔸
 [`State Management`](#state-management)🔸
@@ -11,16 +13,7 @@
 ### How do you ensure responsiveness in your UI designs?
 Use media queries, fluid grids (CSS Grid/Flexbox), relative units (%, rem, vw), and mobile-first design. Tools like Chrome DevTools help test responsiveness across breakpoints.
 
-### How do you handle performance in large-scale CSS?
-I use methodologies like BEM(Block Element Modifier) for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
-
-### Explain how Flexbox and Grid differ.
-write answer here...
-
 ### What is the purpose of ARIA roles in HTML?
-write answer here...
-
-### How do you optimize CSS for performance?
 write answer here...
 
 ### What are the differences between ``==`` and ``===`` in JavaScript?
