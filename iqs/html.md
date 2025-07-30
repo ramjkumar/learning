@@ -10,11 +10,12 @@
 3. ✅ Apply CSS Media Queries
 4. ✅ Use Flexbox and Grid for Layouts
 5. ✅ Make Images and Media Responsive
-   - ``` img, video {
-  max-width: 100%;
-  height: auto;
-}
- ```
+   ```
+   img, video {
+     max-width: 100%;
+     height: auto;
+   }
+    ```
 6. ✅ Mobile-First Design Approach
 7. ✅ Test Across Devices and Viewports
    - Browser DevTools (Chrome, Firefox) with device emulators
