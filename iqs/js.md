@@ -4,7 +4,14 @@
 - Hoisting is JavaScript's default behavior of moving declarations to the top.
 - During JS code execution, memory is allocated to all variables and function during memory creation phase.
 - Variables will be allocated undefined before initialization, function will hold the entire function code
-  -  Variable can be used before it has been declared 
+  -  Variable can be used before it has been declared
+
+### ❓ Temporal Dead Zone
+- Time between hoisting and initialization. It happens with let & const.
+- Before initialization if we try to access, we will get Reference error – cannot access variable name before initialization
+
+ ### ❓ Lexical Environment
+ During JS code execution, memory is allocated to all variables and function during memory creation phase, along with this lexical environment is also created, which is nothing but reference to outer function / higher level until it reaches the global scope 
 
 ### ❓ What are the differences between ``==`` and ``===`` in JavaScript?
 - ``==`` compares values after type coercion.
