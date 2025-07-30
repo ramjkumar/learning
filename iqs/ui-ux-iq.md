@@ -1,5 +1,5 @@
 [`Front-End Development (HTML, CSS, JS)`](#front-end-development-html-css-js)🔸
-[`CSS`](#css.md)🔸
+[`CSS`](css.md)🔸
 [`UI/UX Design`](#uiux-design)🔸
 [`Component-Based Development`](#component-based-development)🔸
 [`State Management`](#state-management)🔸
