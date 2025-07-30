@@ -28,3 +28,12 @@ div {
 **Rendered size**
 - content-box > Width = 200 (content) + 40 (padding) + 20 (border) = 260px
 - border-box > Width = 200px total (content shrinks to fit padding + border inside)
+
+### How do you handle performance in large-scale CSS?
+I use methodologies like BEM(Block Element Modifier) for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
+
+### Explain how Flexbox and Grid differ.
+write answer here...
+
+### How do you optimize CSS for performance?
+write answer here...
