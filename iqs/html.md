@@ -58,3 +58,29 @@ The purpose of **ARIA (Accessible Rich Internet Applications)** roles in HTML is
    - Can contain text or other inline elements only.
    - You can set horizontal padding/margin, but not width/height directly (unless using CSS like display: inline-block).
    - ``` <span>, <a>, <strong>, <em>, <img>, <label>, <abbr> ```
+ 
+### ❓ How do you optimize images for web use
+1. Choose the Right File Format
+2. Resize Images Appropriately
+   - Generate multiple sizes for responsive images using **srcset**
+   - ```
+     <img src="image-600.jpg"
+     srcset="image-400.jpg 400w,
+             image-600.jpg 600w,
+             image-1000.jpg 1000w"
+     sizes="(max-width: 600px) 100vw, 600px"
+     alt="Description of image">
+      ```
+   - Compress Images
+   - Use Lazy Loading
+      - ``` <img src="image.jpg" loading="lazy" alt="..." /> ```
+   - Implement Image CDN
+      - Cloudflare Images, Imgix, Cloudinary, ImageKit
+   - Leverage Browser Caching
+   - Use CSS Sprites for Icons
+      - Use SVG sprites or icon fonts (like Font Awesome) where possible.
+   - Audit with Tools
+      - Google PageSpeed Insights
+      - Lighthouse (Chrome DevTools)
+      - WebPageTest.org
+      - GTmetrix
