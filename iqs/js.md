@@ -19,7 +19,7 @@
     let a;
     console.log(a); // undefined
     ```
-- **not defined** - Accessing a variable which is neither defined or decalared
+- **not defined** - Accessing a variable which is neither defined or declared
   - ```
     let a;
     console.log(b); // not defined
