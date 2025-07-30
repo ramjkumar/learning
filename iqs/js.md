@@ -21,6 +21,44 @@
 '5' === 5 // false
 ```
 
+### ❓ What is the difference between var, let, and const?
+1. **var**
+    - **Scope**: Function-scoped.
+    - **Hoisting**: Hoisted to the top of the function or global scope. Initialized with undefined.
+    - **Re-declaration**: Allowed within the same scope.
+    - **Usage**: Old way of declaring variables (before ES6).
+        - ```
+          function example() {
+          console.log(x); // undefined
+          var x = 10;
+          console.log(x); // 10
+        }
+          ```
+2. **let**
+    - **Scope**: Block-scoped (inside {}).
+    - **Hoisting**: Hoisted but not initialized, so accessing it before declaration causes a ReferenceError.
+    - **Re-declaration**: Not allowed in the same scope.
+    - **Usage**: Preferred when variable values need to change.
+        - ```
+          function example() {
+            console.log(x); // ReferenceError
+            let x = 10;
+          }
+          ```
+3. **const**
+    - **Scope**: Block-scoped (like let).
+    - **Hoisting**: Same as let (hoisted but not initialized).
+    - **Re-declaration**: Not allowed.
+    - **Assignment**: Must be initialized when declared and cannot be reassigned.
+    - **Mutation**: You can change contents of objects or arrays declared with const, but can't reassign the variable itself.
+        - ```
+          const x = 5;
+          x = 10; // ❌ TypeError
+          
+          const arr = [1, 2];
+          arr.push(3); // ✅ Allowed: array is mutated, not reassigned
+          ```
+
 ### ❓ What is the difference between null, undefined & not defined ?
 - **null** - A variable has been explicitly assigned "no value"
   - ```
@@ -82,3 +120,28 @@ console.log('End');
 - **Event Loop**: The event loop checks the call stack. Once the synchronous code is executed and the stack is empty, it processes the callback queue, executing the setTimeout callback. 
 
 This mechanism allows JavaScript to handle asynchronous operations efficiently, ensuring that the main thread is not blocked by long-running tasks 
+
+### ❓ Difference Between Promise and Async/Await
+A **Promise** is an object that represents the eventual completion (or failure) of an asynchronous operation.
+- A Promise is a way to handle asynchronous operations.
+- It represents a value that might be available now, later, or never.
+- You use ``.then()`` to get the result and ``.catch()`` to handle errors.
+    - ```
+      fetch('https://api.example.com/data')
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+      ```
+
+**Async/Await** in JS provide a modern syntax for writing asynchronous code, making it appear more synchronous and easier to read and manage compared to traditional callback functions or explicit Promise chaining.
+- ```
+  async function getData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  ```
