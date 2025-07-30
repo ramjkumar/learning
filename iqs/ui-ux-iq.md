@@ -111,24 +111,31 @@ ___
 # Accessibility & Usability
 ### ❓ What is WCAG
 WCAG stands for Web Content Accessibility Guidelines. It is a set of international guidelines developed by the W3C (World Wide Web Consortium) to make web content more accessible to people with disabilities.
+
 **Purpose of WCAG**
+
 To ensure that websites, apps, and digital content are usable by everyone, including people with:
 - Visual impairments (e.g., blindness, low vision, color blindness)
 - Hearing impairments
 - Mobility/motor disabilities
 - Cognitive or learning disabilities
+
 **WCAG Principles – POUR**
+
 WCAG is built around four main principles:
 - **Perceivable**	Content must be presented in ways users can perceive (e.g., text alternatives for images, captions for videos).
 - **Operable**	Users must be able to navigate and interact (e.g., via keyboard, screen readers).
 - **Understandable**		Content must be readable and predictable (e.g., clear language, consistent UI).
 - **Robust**		Content must work well with assistive technologies (e.g., screen readers, magnifiers).
+
 **WCAG Versions**
 - **WCAG 2.0** Published 2008	> Widely adopted, formal standard (ISO)
 - **WCAG 2.1** Published 2018	> Adds support for mobile, low vision, cognitive disabilities
 - **WCAG 2.2** Published 2023	> Adds new success criteria like focus appearance, dragging movements
 - **WCAG 3.0 (draft)** Coming soon	>More flexible, broader in scope
+
 **WCAG Conformance Levels**
+
 Each guideline has testable success criteria, divided into three levels:
 - **A**	- Minimum accessibility	- Provide text alternatives for images
 - **AA** - Mid-range, legal requirement in many countries -Ensure good contrast, keyboard navigation
