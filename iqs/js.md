@@ -50,6 +50,8 @@
   }
   ```
 
+### ❓ Reverse string
+``` let revStr = str.split('').reverse().join(''); ```
 
 ### ❓ What is event delegation in JavaScript?
 write answer here...
@@ -57,5 +59,26 @@ write answer here...
 ### ❓ How do you optimize performance in JavaScript-heavy applications?
 Debouncing events, lazy loading, splitting code via Webpack, avoiding DOM reflows, and using vanilla JS when appropriate
 
-### ❓ Reverse string
-``` let revStr = str.split('').reverse().join(''); ```
+### ❓ Event loop
+Event loop is a fundamental concept in JS that enables asynchronous programming despite JS being single threaded. which allows JS to run tasks like timers, web requests and user actions without stopping the entire program
+
+**How the Event Loop Works**
+1. **Call Stack**: JavaScript uses a call stack to manage function execution. When a function is called, it’s added to the stack, and when it returns, it’s removed from the stack. 
+2. **Web APIs**: Functions like setTimeout, fetch, and DOM events are handled by the browser’s Web APIs, which operate outside the call stack.
+3. **Callback/Task Queue**: When Web APIs complete their tasks, they push their callbacks to the callback queue (setimeout, console, dom apis)
+4. **Micro task queue** - All the callback functions which comes through promises (fetch) & Mutation observer 
+5. **Event Loop**: The event loop continuously checks the call stack and the callback queue. If the call stack is empty, it moves the first callback from the queue to the stack for execution.
+
+```
+console.log('Start');
+setTimeout(() => {
+  console.log('Timeout');
+}, 0);
+console.log('End'); 
+```
+**Explanation**
+- **Synchronous Code**: console.log('Start') and console.log('End') are synchronous and are executed immediately, in order.
+- **Asynchronous Code**: setTimeout is asynchronous. It sets a timer and the callback is placed in the callback queue after the timer expires (0 milliseconds in this case).
+- **Event Loop**: The event loop checks the call stack. Once the synchronous code is executed and the stack is empty, it processes the callback queue, executing the setTimeout callback. 
+
+This mechanism allows JavaScript to handle asynchronous operations efficiently, ensuring that the main thread is not blocked by long-running tasks 
