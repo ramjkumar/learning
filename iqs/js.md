@@ -8,16 +8,21 @@
 '5' === 5 // false
 ```
 
-### ❓ What is the difference between null and undefined?
+### ❓ What is the difference between null, undefined & not defined ?
+- **null** - A variable has been explicitly assigned "no value"
+  - ```
+    let b = null;
+    console.log(b); // null
+    ```
 - **undefined** - A variable has been declared but not assigned a value
   - ```
     let a;
     console.log(a); // undefined
     ```
-- **null** - A variable has been explicitly assigned "no value"
+- **not defined** - Accessing a variable which is neither defined or decalared
   - ```
-    let b = null;
-    console.log(b); // null
+    let a;
+    console.log(b); // not defined
     ```
 ### ❓ What is event delegation in JavaScript?
 write answer here...
