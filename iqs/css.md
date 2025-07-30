@@ -29,6 +29,52 @@ div {
 - content-box > Width = 200 (content) + 40 (padding) + 20 (border) = 260px
 - border-box > Width = 200px total (content shrinks to fit padding + border inside)
 
+### ❓ CSS Combinators
+1. **Descendant Combinator (space)**
+    - Selects all elements that are descendants (children, grandchildren, etc.) of a specified element.
+    - ```
+      div p {
+      color: blue;
+        }
+        ```
+2. **Child Combinator (>)**
+    - Selects only direct child elements of a specified element.
+    - ```
+        div > p {
+          color: green;
+        }
+      
+        <div>
+          <p>This is green.</p>
+          <section>
+            <p>This is not green.</p> <!-- Not a direct child of div -->
+          </section>
+        </div>
+        ```
+
+3. **Adjacent Sibling Combinator (+)**
+    - Selects the first element that is immediately next to a specified element.
+    - ```
+          h2 + p {
+              font-weight: bold;
+            }
+        
+        <h2>Title</h2>
+        <p>This paragraph is bold.</p>
+        <p>This one is not affected.</p>    
+      ```
+4. **General Sibling Combinator (~)**
+    - Selects all siblings of an element that come after it (not just the first one).
+    - ```
+      h2 ~ p {
+          color: red;
+        }
+
+      <h2>Header</h2>
+        <p>This is red.</p>
+        <p>This is also red.</p>
+      ```
+
 ### ❓ How do you handle performance in large-scale CSS?
 I use methodologies like BEM(Block Element Modifier) for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
 
