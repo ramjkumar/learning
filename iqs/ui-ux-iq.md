@@ -16,6 +16,35 @@
 - **Feedback**: Users should get clear responses from the system.
 - **Accessibility**: Follow WCAG to ensure inclusivity.
 - **Responsiveness**: Ensure UI works across devices and breakpoints.
+
+### ❓ What is user-centered design and how do you implement it?
+**Key Principles of UCD**:
+- **Focus on Users and Tasks**
+    - Understand who the users are, what they want, and how they behave.
+- **Empirical Measurement**
+    - Use observations, usability testing, and data to drive decisions.
+- **Iterative Design**
+    - Continuously refine the design based on feedback and testing.
+- **Involvement of Users**
+    - Engage real users early and often throughout the process.
+ 
+**The UCD Process (Step-by-Step)**:
+1. Research & Understand the Users
+    - Methods: User interviews, Surveys, Personas, Empathy maps, Task analysis
+    - Goal: Build a deep understanding of user goals, pain points, and contexts.
+2. Define User Requirements
+    - Document user needs and convert them into design requirements.
+    - Use user stories and use cases to describe what users need to achieve.
+3. Design Solutions
+    - Create wireframes, prototypes, and user flows.
+    - Focus on accessibility, usability, and consistency.
+    - Tools: Figma, Sketch, Adobe XD, Balsamiq.
+4. Evaluate & Test
+    - Conduct usability testing with real users.
+    - Techniques: A/B testing, Heuristic evaluation, Screen reader or keyboard-only navigation testing (for accessibility), Analyze results and identify usability issues.
+5. Refine & Iterate
+    - Improve the design based on feedback and re-test.
+    - Loop through design and test phases until goals are met.
   
 ### ❓ How do you maintain visual consistency and accessibility across components?
 1. **Design system & component library**
