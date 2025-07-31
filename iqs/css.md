@@ -113,4 +113,18 @@ I use methodologies like BEM(Block Element Modifier) for scalable class naming, 
 
 
 ### ❓ How do you optimize CSS for performance?
-write answer here...
+1. Minify CSS
+2. Combine CSS Files (For large projects, use a build tool like Webpack or Gulp to bundle styles)
+3. Use Critical CSS (load important css internal, rest load using normally)
+4. Avoid @import in CSS (@import delays stylesheet loading, Use link tags in HTML or import via build tools instead)
+5. Use Shorthand Properties
+6. Remove Unused CSS (Chrome DevTools → Coverage tab)
+7. Use CSS Variables and Utility Classes
+- ```
+    :root {
+    --primary-color: #007bff;
+    }
+    .button {
+    color: var(--primary-color);
+    }
+  ```
