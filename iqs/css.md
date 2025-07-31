@@ -120,11 +120,26 @@ I use methodologies like BEM(Block Element Modifier) for scalable class naming, 
 5. Use Shorthand Properties
 6. Remove Unused CSS (Chrome DevTools → Coverage tab)
 7. Use CSS Variables and Utility Classes
-- ```
-    :root {
-    --primary-color: #007bff;
-    }
-    .button {
-    color: var(--primary-color);
-    }
-  ```
+    - ```
+        :root {
+        --primary-color: #007bff;
+        }
+        .button {
+        color: var(--primary-color);
+        }
+      ```
+8. Use Efficient Selectors (select the element directly, avoid calling it deeply if not needed)
+9. Lazy Load Non-critical CSS `` <link rel="stylesheet" href="print.css" media="print"> ``
+10. Use CSS Logical Properties (Better internationalization and reduces overrides)
+    - ```
+        /* Instead of this: */
+        margin-left: 10px;
+        
+        /* Use this: */
+        margin-inline-start: 10px;
+      ```
+11. Cache CSS
+12. Preprocessors Wisely (e.g., SASS/SCSS)
+13. Avoid Inline Styles (in HTML) (Breaks separation of concerns, harder to cache and reuse styles)
+14. Use Content Delivery Network (CDN)
+15. Audit Regularly (Use tools like **Lighthouse, WebPageTest, Chrome DevTools → Performance & Coverage** to continuously assess and improve CSS performance
