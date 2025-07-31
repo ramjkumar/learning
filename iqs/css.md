@@ -79,7 +79,38 @@ div {
 I use methodologies like BEM(Block Element Modifier) for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
 
 ### ❓ Explain how Flexbox and Grid differ.
-write answer here...
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th><strong>Flexbox</strong></th>
+      <th><strong>Grid</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Layout Direction</strong></td>
+      <td>One-dimensional (either row <strong>or</strong> column)</td>
+      <td>Two-dimensional (rows <strong>and</strong> columns)</td>
+    </tr>
+    <tr>
+      <td><strong>Use Case</strong></td>
+      <td>Best for aligning items in a single direction</td>
+      <td>Best for full page or complex component layouts</td>
+    </tr>
+    <tr>
+      <td><strong>Item Placement</strong></td>
+      <td>Items placed sequentially along main axis</td>
+      <td>Items can be placed anywhere via row/column lines</td>
+    </tr>
+    <tr>
+      <td><strong>Responsiveness</strong></td>
+      <td>Easy for simple, linear responsive layouts</td>
+      <td>More powerful for complex, responsive grid layouts</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### ❓ How do you optimize CSS for performance?
 write answer here...
