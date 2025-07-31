@@ -61,6 +61,8 @@
 </table>
 
 ### ❓ What is user-centered design and how do you implement it?
+User-Centered Design is an iterative design process in which designers focus on the users and their needs in each phase of the design process. It involves users throughout to ensure that the final product is highly usable and meets their expectations.
+
 **Key Principles of UCD**:
 - **Focus on Users and Tasks**
     - Understand who the users are, what they want, and how they behave.
