@@ -92,7 +92,31 @@
 ``` let revStr = str.split('').reverse().join(''); ```
 
 ### ❓ What is event delegation in JavaScript?
-write answer here...
+Event delegation in JavaScript is a technique where instead of attaching event listeners to individual child elements, you attach a single event listener to a common parent element. This listener can monitor events from its children by taking advantage of event bubbling (where events propagate from the target element up through its ancestors).
+
+**How It Works**
+When an event occurs on a child element, it bubbles up to its ancestors. You can catch that event on a parent element and use the event.target to figure out which child triggered it.
+
+**Why Use Event Delegation?**
+- **Performance**: Reduces the number of event listeners in the DOM.
+- **Dynamic Content**: Works well when child elements are added or removed dynamically.
+- **Cleaner Code**: Centralizes event logic in one place.
+
+```
+<ul id="menu">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+</ul>
+
+<script>
+  document.getElementById('menu').addEventListener('click', function(event) {
+    if (event.target.tagName === 'LI') {
+      alert('You clicked: ' + event.target.textContent);
+    }
+  });
+</script>
+```
 
 ### ❓ How do you optimize performance in JavaScript-heavy applications?
 Debouncing events, lazy loading, splitting code via Webpack, avoiding DOM reflows, and using vanilla JS when appropriate
