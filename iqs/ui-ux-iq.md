@@ -204,6 +204,7 @@ WCAG is built around four main principles:
         - Color contrast: Maintain sufficient contrast between text and background (e.g., WCAG recommends a ratio of at least 4.5:1).
         - Responsive design: Ensure content adapts to various screen sizes and orientations.
         - Content structure: Use headings (``<h1> to <h6>``) and landmarks to organize content clearly.        
+
 - **Operable**	Users must be able to navigate and interact (e.g., via keyboard, screen readers).
     - Make sure users can interact with the interface using various input methods.
         - Keyboard navigation: Ensure all functionality is accessible via keyboard (e.g., tabbing through links and form fields).
@@ -211,9 +212,22 @@ WCAG is built around four main principles:
         - Avoid timeouts: Provide options to extend or disable time limits for interactions.
         - Gestures and motion: Avoid relying solely on complex gestures or motion-based interactions.
         - Skip links: Include “skip to content” links for screen reader and keyboard users. 
-- **Understandable**		Content must be readable and predictable (e.g., clear language, consistent UI).
-- **Robust**		Content must work well with assistive technologies (e.g., screen readers, magnifiers).
 
+- **Understandable**		Content must be readable and predictable (e.g., clear language, consistent UI).
+    - Ensure that users can comprehend the interface and its behavior.
+        - Clear language: Use simple, concise language and avoid jargon.
+        - Consistent navigation: Keep menus and layouts consistent across pages.
+        - Error handling: Provide clear error messages and suggestions for correction.
+        - Form labels and instructions: Use descriptive labels and helpful instructions for form fields.
+        - Readable fonts: Use legible font sizes and styles. 
+
+- **Robust**		Content must work well with assistive technologies (e.g., screen readers, magnifiers).
+    - Ensure compatibility with current and future technologies, including assistive tools.
+        - Valid HTML/CSS: Use standards-compliant code to ensure compatibility with screen readers and browsers.
+        - ARIA roles and attributes: Use ARIA (Accessible Rich Internet Applications) to enhance accessibility where native HTML falls short.
+        - Progressive enhancement: Build features that work with basic functionality and enhance them for modern browsers.
+        - Testing: Use tools like Axe, Lighthouse, NVDA, JAWS, and VoiceOver to test accessibility.
+          
 **WCAG Versions**
 - **WCAG 2.0** Published 2008	> Widely adopted, formal standard (ISO)
 - **WCAG 2.1** Published 2018	> Adds support for mobile, low vision, cognitive disabilities
