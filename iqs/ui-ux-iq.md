@@ -198,8 +198,8 @@ To ensure that websites, apps, and digital content are usable by everyone, inclu
 
 WCAG is built around four main principles:
 - **Perceivable**	Content must be presented in ways users can perceive (e.g., text alternatives for images, captions for videos).
-      - Ensure that users can perceive the content, regardless of their sensory abilities.
-          - Text alternatives: Provide alt text for images, transcripts for audio, and captions for video
+    - Ensure that users can perceive the content, regardless of their sensory abilities.
+        - Text alternatives: Provide alt text for images, transcripts for audio, and captions for video
         
 - **Operable**	Users must be able to navigate and interact (e.g., via keyboard, screen readers).
 - **Understandable**		Content must be readable and predictable (e.g., clear language, consistent UI).
