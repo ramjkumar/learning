@@ -200,6 +200,10 @@ WCAG is built around four main principles:
 - **Perceivable**	Content must be presented in ways users can perceive (e.g., text alternatives for images, captions for videos).
     - Ensure that users can perceive the content, regardless of their sensory abilities.
         - Text alternatives: Provide alt text for images, transcripts for audio, and captions for video
+        - Semantic HTML: Use proper HTML tags (<header>, <nav>, <main>, <footer>, etc.) to help screen readers interpret content
+        - Color contrast: Maintain sufficient contrast between text and background (e.g., WCAG recommends a ratio of at least 4.5:1).
+        - Responsive design: Ensure content adapts to various screen sizes and orientations.
+        - Content structure: Use headings (<h1> to <h6>) and landmarks to organize content clearly.
         
 - **Operable**	Users must be able to navigate and interact (e.g., via keyboard, screen readers).
 - **Understandable**		Content must be readable and predictable (e.g., clear language, consistent UI).
