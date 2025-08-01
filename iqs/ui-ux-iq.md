@@ -203,9 +203,14 @@ WCAG is built around four main principles:
         - Semantic HTML: Use proper HTML tags (``<header>, <nav>, <main>, <footer>``, etc.) to help screen readers interpret content
         - Color contrast: Maintain sufficient contrast between text and background (e.g., WCAG recommends a ratio of at least 4.5:1).
         - Responsive design: Ensure content adapts to various screen sizes and orientations.
-        - Content structure: Use headings (``<h1> to <h6>``) and landmarks to organize content clearly.
-        
+        - Content structure: Use headings (``<h1> to <h6>``) and landmarks to organize content clearly.        
 - **Operable**	Users must be able to navigate and interact (e.g., via keyboard, screen readers).
+    - Make sure users can interact with the interface using various input methods.
+        - Keyboard navigation: Ensure all functionality is accessible via keyboard (e.g., tabbing through links and form fields).
+        - Focus management: Use visible focus indicators and manage focus order logically.
+        - Avoid timeouts: Provide options to extend or disable time limits for interactions.
+        - Gestures and motion: Avoid relying solely on complex gestures or motion-based interactions.
+        - Skip links: Include “skip to content” links for screen reader and keyboard users. 
 - **Understandable**		Content must be readable and predictable (e.g., clear language, consistent UI).
 - **Robust**		Content must work well with assistive technologies (e.g., screen readers, magnifiers).
 
