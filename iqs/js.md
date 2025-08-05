@@ -1,19 +1,6 @@
 # JS
 
 ## ⏩ Fundamentals
-  
-### ❓ Hoisting
-- Hoisting is JavaScript's default behavior of moving declarations to the top.
-- During JS code execution, memory is allocated to all variables and function during memory creation phase.
-- Variables will be allocated undefined before initialization, function will hold the entire function code
-  -  Variable can be used before it has been declared
-
-### ❓ Temporal Dead Zone
-- Time between hoisting and initialization. It happens with let & const.
-- Before initialization if we try to access, we will get Reference error – cannot access variable name before initialization
-
- ### ❓ Lexical Environment
- During JS code execution, memory is allocated to all variables and function during memory creation phase, along with this lexical environment is also created, which is nothing but reference to outer function / higher level until it reaches the global scope 
 
 ### ❓ What is the difference between var, let, and const?
 1. **var**
@@ -78,6 +65,21 @@
 '5' === 5 // false
 ```
 
+## ⏩ Execution Context & Scope
+  
+### ❓ Hoisting
+- Hoisting is JavaScript's default behavior of moving declarations to the top.
+- During JS code execution, memory is allocated to all variables and function during memory creation phase.
+- Variables will be allocated undefined before initialization, function will hold the entire function code
+  -  Variable can be used before it has been declared
+
+### ❓ Temporal Dead Zone
+- Time between hoisting and initialization. It happens with let & const.
+- Before initialization if we try to access, we will get Reference error – cannot access variable name before initialization
+
+ ### ❓ Lexical Environment
+ During JS code execution, memory is allocated to all variables and function during memory creation phase, along with this lexical environment is also created, which is nothing but reference to outer function / higher level until it reaches the global scope 
+
 ## ⏩ Data Manipulation
 
 ### ❓ How to empty an array in JavaScript?
@@ -94,6 +96,56 @@
 
 ### ❓ Reverse string
 ``` let revStr = str.split('').reverse().join(''); ```
+
+### ❓ shallow copy vs deep copy in javascript
+In JavaScript, shallow copy and deep copy refer to how objects (or arrays) are duplicated, especially when they contain nested structures. Here's a breakdown of the differences:
+- **Shallow Copy**
+  - A shallow copy duplicates only the top-level properties of an object. If the object contains nested objects or arrays, the references to those nested structures are copied—not the actual values.
+    - ```
+      const original = {
+        name: "Ram",
+        address: { city: "Chennai", pin: 600001 }
+      };
+      
+      const shallowCopy = { ...original };
+      
+      shallowCopy.name = "Kumar";
+      shallowCopy.address.city = "Bangalore";
+
+      console.log(original.name); // Output: "Ram"
+      console.log(original.address.city); // Output: "Bangalore"
+
+      ``` 
+- **Deep Copy**
+  - A deep copy duplicates all levels of the object, including nested objects and arrays. Changes to the copied object do not affect the original.
+    - ```
+      const original = {
+        name: "Ram",
+        address: { city: "Chennai", pin: 600001 }
+      };
+      
+      const deepCopy = structuredClone(original);
+      
+      deepCopy.address.city = "Bangalore";
+      
+      console.log(original.address.city); // Output: "Chennai"
+      ```
+    - ```
+      const deepCopy = JSON.parse(JSON.stringify(original));
+      ```
+    - ```
+      import _ from 'lodash';
+      const deepCopy = _.cloneDeep(original);
+      ```
+    - ```
+      import cloneDeep from 'lodash/cloneDeep';
+
+      const obj = { a: 1, b: { c: 2 } };
+      const deepCopy = cloneDeep(obj);
+      
+      deepCopy.b.c = 6;
+      console.log(obj.b.c); // Output: 2
+      ```
 
 ## ⏩ DOM & Event Handling
 
@@ -181,53 +233,3 @@ A **Promise** is an object that represents the eventual completion (or failure) 
   ```
 
 ## ⏩ Uncategorized
-
-### ❓ shallow copy vs deep copy in javascript
-In JavaScript, shallow copy and deep copy refer to how objects (or arrays) are duplicated, especially when they contain nested structures. Here's a breakdown of the differences:
-- **Shallow Copy**
-  - A shallow copy duplicates only the top-level properties of an object. If the object contains nested objects or arrays, the references to those nested structures are copied—not the actual values.
-    - ```
-      const original = {
-        name: "Ram",
-        address: { city: "Chennai", pin: 600001 }
-      };
-      
-      const shallowCopy = { ...original };
-      
-      shallowCopy.name = "Kumar";
-      shallowCopy.address.city = "Bangalore";
-
-      console.log(original.name); // Output: "Ram"
-      console.log(original.address.city); // Output: "Bangalore"
-
-      ``` 
-- **Deep Copy**
-  - A deep copy duplicates all levels of the object, including nested objects and arrays. Changes to the copied object do not affect the original.
-    - ```
-      const original = {
-        name: "Ram",
-        address: { city: "Chennai", pin: 600001 }
-      };
-      
-      const deepCopy = structuredClone(original);
-      
-      deepCopy.address.city = "Bangalore";
-      
-      console.log(original.address.city); // Output: "Chennai"
-      ```
-    - ```
-      const deepCopy = JSON.parse(JSON.stringify(original));
-      ```
-    - ```
-      import _ from 'lodash';
-      const deepCopy = _.cloneDeep(original);
-      ```
-    - ```
-      import cloneDeep from 'lodash/cloneDeep';
-
-      const obj = { a: 1, b: { c: 2 } };
-      const deepCopy = cloneDeep(obj);
-      
-      deepCopy.b.c = 6;
-      console.log(obj.b.c); // Output: 2
-      ```
