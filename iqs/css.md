@@ -1,7 +1,7 @@
 # CSS
 
-## Fundamentals <img alt="Fundamentals" src="https://img.shields.io/badge/Fundamentals-red?style=for-the-badge"></img>
-## <!-- Fundamentals -->  <img alt="Fundamentals" src="https://img.shields.io/badge/Fundamentals-red?style=for-the-badge"></img>
+
+## <!-- Fundamentals -->  <img alt="Fundamentals" title="Fundamentals"  src="https://img.shields.io/badge/Fundamentals-red?style=for-the-badge"></img>
 
 
 ### ❓ Box model in CSS?
