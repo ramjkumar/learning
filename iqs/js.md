@@ -1,5 +1,6 @@
 # JS
-<img alt="Fundamentals" src="https://img.shields.io/badge/Fundamentals-red?style=for-the-badge" />
+
+## ⏩ Fundamentals
   
 ### ❓ Hoisting
 - Hoisting is JavaScript's default behavior of moving declarations to the top.
@@ -13,14 +14,6 @@
 
  ### ❓ Lexical Environment
  During JS code execution, memory is allocated to all variables and function during memory creation phase, along with this lexical environment is also created, which is nothing but reference to outer function / higher level until it reaches the global scope 
-
-### ❓ What are the differences between ``==`` and ``===`` in JavaScript?
-- ``==`` compares values after type coercion.
-- ``===`` compares both value and type.
-```
-'5' == 5  // true
-'5' === 5 // false
-```
 
 ### ❓ What is the difference between var, let, and const?
 1. **var**
@@ -77,6 +70,16 @@
     console.log(b); // not defined
     ```
 
+### ❓ What are the differences between ``==`` and ``===`` in JavaScript?
+- ``==`` compares values after type coercion.
+- ``===`` compares both value and type.
+```
+'5' == 5  // true
+'5' === 5 // false
+```
+
+## ⏩ Data Manipulation
+
 ### ❓ How to empty an array in JavaScript?
 `` var arrayList =  ['a','b','c','d','e','f']; ``
 - **Method 1** `` arrayList = [] ``
@@ -91,6 +94,8 @@
 
 ### ❓ Reverse string
 ``` let revStr = str.split('').reverse().join(''); ```
+
+## ⏩ DOM & Event Handling
 
 ### ❓ What is event delegation in JavaScript?
 Event delegation in JavaScript is a technique where instead of attaching event listeners to individual child elements, you attach a single event listener to a common parent element. This listener can monitor events from its children by taking advantage of event bubbling (where events propagate from the target element up through its ancestors).
@@ -119,8 +124,12 @@ When an event occurs on a child element, it bubbles up to its ancestors. You can
 </script>
 ```
 
+## ⏩ Performance Optimization
+
 ### ❓ How do you optimize performance in JavaScript-heavy applications?
 Debouncing events, lazy loading, splitting code via Webpack, avoiding DOM reflows, and using vanilla JS when appropriate
+
+## ⏩ Control Flow & Execution
 
 ### ❓ Event loop
 Event loop is a fundamental concept in JS that enables asynchronous programming despite JS being single threaded. which allows JS to run tasks like timers, web requests and user actions without stopping the entire program
