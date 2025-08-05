@@ -1,5 +1,6 @@
 # CSS
-## CSS
+<img alt="Fundamentals" src="https://img.shields.io/badge/Fundamentals-red?style=for-the-badge"></img>
+
 ### ❓ Box model in CSS?
 The Box Model in CSS is a fundamental concept that describes how elements on a web page are structured and how space is allocated around them. Every HTML element is considered a box, and the CSS Box Model defines how the size of that box is calculated.
 
@@ -76,8 +77,7 @@ div {
         <p>This is also red.</p>
       ```
 
-### ❓ How do you handle performance in large-scale CSS?
-I use methodologies like BEM(Block Element Modifier) for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
+<img alt="Layout Techniques" src="https://img.shields.io/badge/Layout_Techniques-red?style=for-the-badge"></img>
 
 ### ❓ Explain how Flexbox and Grid differ.
 <table border="1" cellspacing="0" cellpadding="8">
@@ -112,6 +112,10 @@ I use methodologies like BEM(Block Element Modifier) for scalable class naming, 
   </tbody>
 </table>
 
+<img alt="Performance & Optimization" src="https://img.shields.io/badge/Performance_%26_Optimization-red?style=for-the-badge"></img>
+
+### ❓ How do you handle performance in large-scale CSS?
+I use methodologies like BEM(Block Element Modifier) for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
 
 ### ❓ How do you optimize CSS for performance?
 1. Minify CSS
