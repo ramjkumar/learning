@@ -230,5 +230,4 @@ In JavaScript, shallow copy and deep copy refer to how objects (or arrays) are d
       
       deepCopy.b.c = 6;
       console.log(obj.b.c); // Output: 2
-
       ```
