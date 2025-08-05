@@ -78,7 +78,7 @@ div {
         <p>This is also red.</p>
       ```
 
-<img alt="Layout Techniques" src="https://img.shields.io/badge/Layout_Techniques-red?style=for-the-badge"></img>
+## ⏩ Layout Techniques
 
 ### ❓ Explain how Flexbox and Grid differ.
 <table border="1" cellspacing="0" cellpadding="8">
@@ -113,7 +113,7 @@ div {
   </tbody>
 </table>
 
-<img alt="Performance & Optimization" src="https://img.shields.io/badge/Performance_%26_Optimization-red?style=for-the-badge"></img>
+## ⏩ Performance & Optimization
 
 ### ❓ How do you handle performance in large-scale CSS?
 I use methodologies like BEM(Block Element Modifier) for scalable class naming, CSS variables for reuse, and critical CSS loading to prioritize above-the-fold content. I also avoid large nested selectors and leverage code-splitting where supported.
