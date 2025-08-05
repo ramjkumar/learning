@@ -222,3 +222,13 @@ In JavaScript, shallow copy and deep copy refer to how objects (or arrays) are d
       import _ from 'lodash';
       const deepCopy = _.cloneDeep(original);
       ```
+    - ```
+      import cloneDeep from 'lodash/cloneDeep';
+
+      const obj = { a: 1, b: { c: 2 } };
+      const deepCopy = cloneDeep(obj);
+      
+      deepCopy.b.c = 6;
+      console.log(obj.b.c); // Output: 2
+
+      ```
