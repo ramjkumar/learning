@@ -215,7 +215,9 @@ In JavaScript, shallow copy and deep copy refer to how objects (or arrays) are d
       
       console.log(original.address.city); // Output: "Chennai"
       ```
-    - ``` const deepCopy = JSON.parse(JSON.stringify(original)); ```
+    - ```
+        const deepCopy = JSON.parse(JSON.stringify(original));
+      ```
     - ```
       import _ from 'lodash';
       const deepCopy = _.cloneDeep(original);
