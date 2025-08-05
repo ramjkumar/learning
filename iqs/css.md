@@ -1,6 +1,8 @@
 # CSS
-<img alt="Fundamentals" src="https://img.shields.io/badge/Fundamentals-red?style=for-the-badge"></img>
-## Fundamentals
+
+## Fundamentals <img alt="Fundamentals" src="https://img.shields.io/badge/Fundamentals-red?style=for-the-badge"></img>
+## <!-- This text is hidden in the rendered output. -->
+
 
 ### ❓ Box model in CSS?
 The Box Model in CSS is a fundamental concept that describes how elements on a web page are structured and how space is allocated around them. Every HTML element is considered a box, and the CSS Box Model defines how the size of that box is calculated.
