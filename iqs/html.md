@@ -1,5 +1,23 @@
 ### HTML
 
+## ⏩ Fundamentals
+
+### ❓ What is the difference between inline and block elements?
+- **Block Elements**
+   - Always start on a new line.
+   - Take up the full width available (by default).
+   - Can contain other block or inline elements.
+   - You can set width, height, margin, and padding.
+   - ``` <div>, <p>, <h1> to <h6>, <ul>, <ol>, <li>, <section>, <article> ```
+- **Inline Elements**
+   - Do not start on a new line.
+   - Only take up as much width as necessary.
+   - Can contain text or other inline elements only.
+   - You can set horizontal padding/margin, but not width/height directly (unless using CSS like display: inline-block).
+   - ``` <span>, <a>, <strong>, <em>, <img>, <label>, <abbr> ```
+
+## ⏩ Responsive Design
+
 ### ❓ How do you implement responsive design?
 1. ✅ Use a Responsive Meta Tag
    - ``` <meta name="viewport" content="width=device-width, initial-scale=1.0"> ```
@@ -21,6 +39,8 @@
    - Browser DevTools (Chrome, Firefox) with device emulators
    - Real devices for hands-on testing
    - Tools like BrowserStack or Responsively App
+  
+## ⏩ Accessibility
 
 ### ❓ What is the purpose of ARIA roles in HTML?
 The purpose of **ARIA (Accessible Rich Internet Applications)** roles in HTML is to improve accessibility for users who rely on assistive technologies like screen readers.
@@ -45,19 +65,7 @@ The purpose of **ARIA (Accessible Rich Internet Applications)** roles in HTML is
 - **tab** -	Identifies a tab in a tablist
 - **tooltip** - Describes a tooltip element
 
-### ❓ What is the difference between inline and block elements?
-- **Block Elements**
-   - Always start on a new line.
-   - Take up the full width available (by default).
-   - Can contain other block or inline elements.
-   - You can set width, height, margin, and padding.
-   - ``` <div>, <p>, <h1> to <h6>, <ul>, <ol>, <li>, <section>, <article> ```
-- **Inline Elements**
-   - Do not start on a new line.
-   - Only take up as much width as necessary.
-   - Can contain text or other inline elements only.
-   - You can set horizontal padding/margin, but not width/height directly (unless using CSS like display: inline-block).
-   - ``` <span>, <a>, <strong>, <em>, <img>, <label>, <abbr> ```
+## ⏩ Optimization
  
 ### ❓ How do you optimize images for web use
 1. Choose the Right File Format
