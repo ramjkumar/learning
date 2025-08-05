@@ -1,6 +1,5 @@
 # JS
-<img src="https://img.shields.io/badge/just%20the%20message-red" /></img>
-<a href="https://github.com/sponsors/alexandresanlim"><img alt="Sponsor" src="https://img.shields.io/badge/sponsorrr-red?style=for-the-badge" /></a>
+<img alt="Fundamentals" src="https://img.shields.io/badge/Fundamentals-red?style=for-the-badge" />
   
 ### ❓ Hoisting
 - Hoisting is JavaScript's default behavior of moving declarations to the top.
