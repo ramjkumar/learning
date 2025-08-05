@@ -1,4 +1,6 @@
 # JS
+<img src="https://img.shields.io/badge/just%20the%20message-red" /></img>
+![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
 
 ### ❓ Hoisting
 - Hoisting is JavaScript's default behavior of moving declarations to the top.
