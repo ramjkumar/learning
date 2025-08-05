@@ -179,3 +179,25 @@ A **Promise** is an object that represents the eventual completion (or failure) 
     }
   }
   ```
+
+## ⏩ Uncategorized
+
+### ❓ shallow copy vs deep copy in javascript
+In JavaScript, shallow copy and deep copy refer to how objects (or arrays) are duplicated, especially when they contain nested structures. Here's a breakdown of the differences:
+- Shallow Copy
+  - A shallow copy duplicates only the top-level properties of an object. If the object contains nested objects or arrays, the references to those nested structures are copied—not the actual values.
+    - ```
+      const original = {
+        name: "Ram",
+        address: { city: "Chennai", pin: 600001 }
+      };
+      
+      const shallowCopy = { ...original };
+      
+      shallowCopy.name = "Kumar";
+      shallowCopy.address.city = "Bangalore";
+
+      console.log(original.name); // Output: "Ram"
+      console.log(original.address.city); // Output: "Bangalore"
+
+      ``` 
