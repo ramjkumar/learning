@@ -2,7 +2,8 @@
 
 ## ⏩ Fundamentals
 
-### ❓ Box model in CSS?
+### ❓ Explain the CSS box model and how it affects layout?
+
 The Box Model in CSS is a fundamental concept that describes how elements on a web page are structured and how space is allocated around them. Every HTML element is considered a box, and the CSS Box Model defines how the size of that box is calculated.
 
 **Components of the CSS Box Model**
