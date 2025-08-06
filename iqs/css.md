@@ -30,8 +30,8 @@ div {
 }
 ```
 **Rendered size**
-- content-box > Width = 200 (content) + 40 (padding) + 20 (border) = 260px
-- border-box > Width = 200px total (content shrinks to fit padding + border inside)
+- content-box > Width = 200 (content) + 40 (padding) + 20 (border) = **260px**
+- border-box > Width = **200px** total (content shrinks to fit padding + border inside)
 
 ### ❓ CSS Combinators
 1. **Descendant Combinator (space)**
