@@ -218,6 +218,26 @@ console.log('End');
 
 This mechanism allows JavaScript to handle asynchronous operations efficiently, ensuring that the main thread is not blocked by long-running tasks 
 
+### Event loop example
+
+```
+setTimeout(() => console.log(1), 0);
+console.log(2);
+new Promise(res => {
+    console.log(3);
+    res();
+}).then(() => console.log(4));
+console.log(5);
+```
+**Output**
+```
+2 - This runs immediately and prints: 2
+3 - The executor function inside the Promise runs immediately and prints: 3
+5 - This runs immediately and prints: 5
+4 - Now the call stack is empty, so JS checks the microtasks queue, .then(() => console.log(4)) is a microtask and runs and prints: 4
+1 - Now the event loop picks the next macrotask: the setTimeout callback and prints: 1
+```
+
 ### ❓ Difference Between Promise and Async/Await
 A **Promise** is an object that represents the eventual completion (or failure) of an asynchronous operation.
 - A Promise is a way to handle asynchronous operations.
