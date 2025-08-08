@@ -99,13 +99,13 @@
 
 ### ❓ Select  string
 ``` 
-    const fruits = ['apple','banana', 'grapes', 'orange','water meleon'];
-    
-    //old approach 
-    console.log (fruits.length - 1); // water meleon
-    
-    //new approach 
-    console.log (fruits.at(-1)); // water meleon
+const fruits = ['apple','banana', 'grapes', 'orange'];
+
+//old approach 
+console.log (fruits.length - 1); // water meleon
+
+//new approach 
+console.log (fruits.at(-1)); // water meleon
 ```
 
 ### ❓ shallow copy vs deep copy in javascript
