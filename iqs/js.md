@@ -97,6 +97,17 @@
 ### ❓ Reverse string
 ``` let revStr = str.split('').reverse().join(''); ```
 
+### ❓ Select  string
+``` 
+    const fruits = ['apple','banana', 'grapes', 'orange','water meleon'];
+    
+    //old approach 
+    console.log (fruits.length - 1); // water meleon
+    
+    //new approach 
+    console.log (fruits.at(-1)); // water meleon
+```
+
 ### ❓ shallow copy vs deep copy in javascript
 In JavaScript, shallow copy and deep copy refer to how objects (or arrays) are duplicated, especially when they contain nested structures. Here's a breakdown of the differences:
 - **Shallow Copy**
