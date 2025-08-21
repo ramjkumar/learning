@@ -218,7 +218,7 @@ console.log('End');
 
 This mechanism allows JavaScript to handle asynchronous operations efficiently, ensuring that the main thread is not blocked by long-running tasks 
 
-### Event loop example
+## Event loop example
 
 ```
 setTimeout(() => console.log(1), 0);
