@@ -263,3 +263,34 @@ A **Promise** is an object that represents the eventual completion (or failure) 
   ```
 
 ## ⏩ Uncategorized
+### ❓ Explain about first and rest in Array / Object destructuring
+In JavaScript **array destructuring**, first and rest are commonly used variable names to represent:
+
+**first**: the first element of the array.
+
+**rest**: the remaining elements of the array, captured using the rest operator (...).
+```
+const numbers = [10, 20, 30, 40, 50];
+
+const [first, ...rest] = numbers;
+
+console.log(first); // 10
+console.log(rest);  // [20, 30, 40, 50]
+```
+
+In **object destructuring**, the concept of rest works, but not first in the same way as arrays, because objects don’t have a guaranteed order like arrays do.
+```
+const user = {
+  name: "Ram",
+  age: 30,
+  location: "Chennai",
+  role: "Engineer"
+};
+
+const { name, ...rest } = user;
+
+console.log(name); // "Ram"
+console.log(rest); 
+// { age: 30, location: "Chennai", role: "Engineer" }
+
+```
