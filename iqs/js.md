@@ -294,3 +294,22 @@ console.log(rest);
 // { age: 30, location: "Chennai", role: "Engineer" }
 
 ```
+### ❓ Spread operator with example
+```
+const original = {
+  name: "Granny Smith",
+  color: "green"
+};
+```
+```
+const updated_v1 = {
+  color: "red",
+  ...original
+};
+```
+```
+const updated_v2 = {
+  ...original,
+  color: "red"
+};
+```
