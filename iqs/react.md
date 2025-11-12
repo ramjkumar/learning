@@ -1,5 +1,5 @@
 ## 1. What is strict mode in React?
-It is a useful component for highlighting potential problems in an application. Just like <Fragment>, <StrictMode> does not render any extra DOM elements. It activates additional checks and warnings for its descendants. These checks apply for development mode only. It has no impact on the production build. 
+It is a useful component for highlighting potential problems in an application. Just like ``` <Fragment>, <StrictMode> ``` does not render any extra DOM elements. It activates additional checks and warnings for its descendants. These checks apply for development mode only. It has no impact on the production build. 
 ## 2. What is the Virtual DOM and how does React use it for performance optimization?
 The Virtual DOM (VDOM) is a lightweight, in-memory representation of the real DOM. It’s one of React’s most powerful features for improving performance and efficiency.
 
