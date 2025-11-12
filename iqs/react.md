@@ -49,3 +49,29 @@ Rendering UI based on the condition
 ## Why index should not be used as key in for loop or map 
 - When we have components at same level and if a new component comes without ID, DOM will re-render all components again, as DOM can't identify where to place it. 
 - But if we give unique ID, react knows where to put that component according to the ID. It is good for optimization and performance.
+## What is React Fiber, and how is it different from the old React reconciliation algorithm?
+React Fiber is the core reconciliation engine introduced in React 16 — a complete rewrite of React’s rendering architecture. Its main goal is to make React’s rendering process incremental, interruptible, and prioritized, allowing smoother user experiences and better control over rendering performance.
+
+Before Fiber, React used a stack-based reconciliation algorithm that was synchronous and non-interruptible. Once rendering started, React couldn’t stop until it finished updating the entire tree — often leading to frame drops or unresponsive UIs during large updates.
+
+**How React Fiber Works**:
+
+React Fiber breaks the rendering process into small units of work (called “fibers”) and assigns priority levels to them. It can pause, reuse, or discard work depending on what’s happening in the app.
+
+- Each Fiber node represents a unit of work for a React element.
+- React can pause work on low-priority updates to handle urgent ones (like user input).
+- Once the high-priority task finishes, React resumes the paused work without starting over.
+
+**Key Differences from Legacy Stack**:
+
+In older versions, React performed recursive synchronous rendering, blocking the main thread. Fiber introduced a linked-list structure that enables React to manage work asynchronously. This makes it possible to:
+
+- Implement features like Concurrent Rendering and Suspense.
+- Improve performance for large component trees.
+- Optimize rendering for better responsiveness.
+
+**Real-World Analogy**:
+Think of React Fiber as a multitasking system — it can juggle multiple tasks at once, prioritize the most important ones, and ensure the app stays smooth and snappy.
+
+**In Short**:
+React Fiber = The foundation that made React concurrent, responsive, and future-proof
