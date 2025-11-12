@@ -1,6 +1,6 @@
-###❓ What is strict mode in React?
+### ❓ What is strict mode in React?
 It is a useful component for highlighting potential problems in an application. Just like `<Fragment>`, `<StrictMode>` does not render any extra DOM elements. It activates additional checks and warnings for its descendants. These checks apply for development mode only. It has no impact on the production build. 
-###❓ What is the Virtual DOM and how does React use it for performance optimization?
+### ❓ What is the Virtual DOM and how does React use it for performance optimization?
 The Virtual DOM (VDOM) is a lightweight, in-memory representation of the real DOM. It’s one of React’s most powerful features for improving performance and efficiency.
 
 Instead of updating the browser’s real DOM directly (which is slow), React creates a virtual copy of it in memory. When a component’s state or props change:
@@ -44,12 +44,12 @@ const Page = () => (
     <Footer /> 
   </div> )
   ```
-###❓ Conditional rendering
+### ❓ Conditional rendering
 Rendering UI based on the condition
-###❓ Why index should not be used as key in for loop or map 
+### ❓ Why index should not be used as key in for loop or map 
 - When we have components at same level and if a new component comes without ID, DOM will re-render all components again, as DOM can't identify where to place it. 
 - But if we give unique ID, react knows where to put that component according to the ID. It is good for optimization and performance.
-###❓ What is React Fiber, and how is it different from the old React reconciliation algorithm?
+### ❓ What is React Fiber, and how is it different from the old React reconciliation algorithm?
 React Fiber is the core reconciliation engine introduced in React 16 — a complete rewrite of React’s rendering architecture. Its main goal is to make React’s rendering process incremental, interruptible, and prioritized, allowing smoother user experiences and better control over rendering performance.
 
 Before Fiber, React used a stack-based reconciliation algorithm that was synchronous and non-interruptible. Once rendering started, React couldn’t stop until it finished updating the entire tree — often leading to frame drops or unresponsive UIs during large updates.
