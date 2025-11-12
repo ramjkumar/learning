@@ -7,11 +7,25 @@ Instead of updating the browser’s real DOM directly (which is slow), React cre
 
 1. React creates a new Virtual DOM tree.
 
-
 2. It compares the new tree with the previous one using a process called diffing.
-
 
 3. It finds the minimal set of changes needed to update the real DOM.
 
-
 4. Only those specific parts are re-rendered — making React fast and efficient.
+
+**Example**:
+
+When you update a counter:
+
+setCount(count + 1);
+
+React doesn’t re-render the entire UI.
+It only updates the element where count is displayed — thanks to the Virtual DOM diffing algorithm.
+
+**Advantages**:
+
+Faster UI updates
+
+Efficient rendering
+
+Better performance compared to direct DOM manipulation
