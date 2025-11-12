@@ -72,6 +72,7 @@ Think of React Fiber as a multitasking system — it can juggle multiple tasks a
 
 **In Short**:
 React Fiber = The foundation that made React concurrent, responsive, and future-proof
+
 ### ❓ What is Concurrent Mode in React, and how does it improve user experience?
 
 Concurrent Mode (introduced experimentally in React 18) is a set of new rendering capabilities that allow React to work on multiple UI updates simultaneously, making applications more responsive and fluid — even during heavy computations.
@@ -96,3 +97,20 @@ Once the important task is done, React resumes the pending render from where it 
 **Example**: If your app is rendering a complex list while a user types in a search box, Concurrent Mode ensures the input stays responsive, instead of lagging or freezing.
 
 **In Short**: Concurrent Mode = The brain behind React’s non-blocking, priority-based, and super-smooth rendering
+
+### ❓ What is Reconciliation in React and how does it work under the hood?
+
+Reconciliation is the core algorithm React uses to efficiently update the DOM when the component’s state or props change. It determines what exactly needs to change in the UI instead of re-rendering everything.
+
+When something changes in your app, React creates a new Virtual DOM tree and compares it to the previous one — this process is called Diffing. React then applies the minimal number of real DOM changes needed to make the UI match the latest Virtual DOM.
+
+**How It Works**:
+- React builds a new Virtual DOM tree when data changes.
+- It compares (diffs) this new tree with the old one.
+- If an element’s type is the same, React updates its attributes and keeps its child structure.
+- If an element’s type differs, React removes the old one and mounts a new DOM node.
+- Finally, it batches updates for better performance.
+
+**Example**: If only one `<li>` in a list changes, React will update just that `<li>` — not the entire list.
+
+**Key Concept**: Reconciliation ensures React apps stay fast, responsive, and efficient by minimizing unnecessary DOM operations.
