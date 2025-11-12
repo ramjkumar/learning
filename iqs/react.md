@@ -144,3 +144,17 @@ They make code simpler, cleaner, and more reusable by letting you “hook into�
   ```
 
 Here, useState manages the count state in a functional component.
+
+### ❓ What is the difference between Virtual DOM and Real DOM?
+
+The Virtual DOM is a lightweight copy of the Real DOM that React uses to improve rendering performance.
+
+In the Real DOM, every time something changes in the UI, the entire DOM structure gets updated — which is slow.
+React instead updates a Virtual DOM, compares it with the previous version (called diffing), and only updates the changed parts in the Real DOM.
+
+**Key Points**:
+- Virtual DOM is faster and more efficient.
+- Real DOM is slower because it directly updates the UI.
+- Virtual DOM improves performance by reducing unnecessary re-renders.
+
+**Example**: When you change state in React, only the affected components re-render — not the entire page.
