@@ -114,3 +114,33 @@ When something changes in your app, React creates a new Virtual DOM tree and com
 **Example**: If only one `<li>` in a list changes, React will update just that `<li>` — not the entire list.
 
 **Key Concept**: Reconciliation ensures React apps stay fast, responsive, and efficient by minimizing unnecessary DOM operations.
+
+### ❓ What are React Hooks and why are they used?
+
+React Hooks are special functions introduced in React 16.8 that allow you to use state and lifecycle features in functional components — without writing class components.
+
+They make code simpler, cleaner, and more reusable by letting you “hook into” React features directly.
+
+**Common Hooks**:
+
+- **useState()** → Manages state in functional components.
+- **useEffect()** → Handles side effects (like fetching data or updating the DOM).
+- **useContext()** → Accesses context values without using props drilling.
+- **useRef()** → Accesses or stores mutable values that persist between renders.
+- **useMemo()** & **useCallback()** → Optimize performance by memoizing values or functions.
+
+**Example**:
+  ```
+  import React, { useState } from 'react';
+  
+  function Counter() {
+   const [count, setCount] = useState(0);
+   return (
+   <button onClick​={() => setCount(count + 1)}>
+   Count: {count}
+   </button>
+   );
+  }
+  ```
+
+Here, useState manages the count state in a functional component.
