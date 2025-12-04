@@ -158,3 +158,27 @@ React instead updates a Virtual DOM, compares it with the previous version (call
 - Virtual DOM improves performance by reducing unnecessary re-renders.
 
 **Example**: When you change state in React, only the affected components re-render — not the entire page.
+
+### ❓ What is React.memo() and Why Should You Use It?
+- If your React app feels slow or re-renders too often, React.memo() might be the optimization you’re missing.
+- React.memo() is a higher-order component that prevents unnecessary re-renders of a functional component.
+- It wraps your component and tells React, If the props haven’t changed, don’t re-render this component.
+- Use React.memo() with useCallback and useMemo for maximum optimization.
+
+**Example**:
+  ```
+  const UserCard = React.memo(function UserCard({ name }) {
+ console.log("Rendered!");
+ return <h3>{name}</h3>;
+});
+  ```
+Now, UserCard re-renders only if name changes.
+
+**Why Use React.memo()?**
+1. Boost Performance - Avoid re-rendering child components when parent re-renders unnecessarily.
+2. Useful for Heavy UI Components - Charts, large lists, expensive calculations, etc.
+3. Great for Stable Props - If props rarely change, React.memo() keeps the UI faster.
+
+**When NOT to use it?**
+- Don’t use it everywhere - Sometimes the comparison cost is higher than the re-render cost.
+- Avoid using React.memo() when: Component is extremely small, Props change frequently, No real performance issue
